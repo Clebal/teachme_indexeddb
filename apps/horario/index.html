@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>SDT - Teach Me</title>
+
+        <!-- Etiqueta importante para Bootstrap -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap 3.3.2 -->
+        <script src="../../js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../framework/css/bootstrap.css">
+        <script src="../../framework/js/bootstrap.js"></script>
+
+        <!-- IndexedDB -->
+
+        <script src="js/indexed.js"></script>
+
+        <!-- style.css -->
+
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+        <!-- Ni imito ni copio solamente estilo propio -->
+
+        <style>
+
+
+        </style>
+
+        <!-- Time Picker -->
+        <script src="../../js/bootstrap-timepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-timepicker.min.css">
+
+
+    </head>
+
+    <body>
+
+        <div id="header">
+
+            <a href="../../existe.html" style="color: white;">
+
+                <div class="atras">
+
+                    <span class="glyphicon glyphicon-menu-left"></span>
+
+                </div>
+
+            </a>
+
+            <div class="center-block text-center">
+
+                <p id="nombre"></p>
+
+            </div>
+
+        </div>
+
+        <div class="agregar agregar_open">
+
+            +
+
+        </div>
+
+        <div id="horario">
+
+
+        </div>
+
+        <div id="agregar" class="popup">
+
+            <div class="form-group">
+
+                <label for="dia">Día</label>
+                <input type="text" class="form-control" id="dia" name="dia" placeholder="Lunes">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="fecha">Hora</label>
+                <input type="text" id="hora" class="form-control" name="hora" placeholder="10:30">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="asignatura">Asignatura</label>
+                <input type="text" class="form-control" id="asignatura" name="asignatura" placeholder="Matemáticas">
+
+            </div>
+
+            <div class="button" style="float: left;">
+
+                <input type="submit" class="btn btn-danger agregar_close" id="agregar_close" value="Cerrar">
+
+            </div>
+
+            <div class="button" style="float: right;" id="boton_agregar">
+
+                <input type="submit" class="btn btn-primary" value="Enviar" id="boton_agregar">
+
+            </div>
+
+        </div>
+
+        <!-- Include jQuery Popup Overlay -->
+        <script src="../../js/jquery.popupoverlay.js"></script>
+
+        <script>
+            $(document).ready(function() {
+
+                // Initialize the plugin
+                $('#agregar').popup(
+                    {
+                        transition: 'all 0.3s',
+                        scrolllock: true // optional
+                    });
+
+            });
+        </script>
+        <script src="../../js/bootstrap-timepicker.js"></script>
+        <script type="text/javascript">
+            $('#timepicker1').timepicker();
+        </script>
+
+    </body>
+
+</html>

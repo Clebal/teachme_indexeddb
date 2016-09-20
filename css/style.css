@@ -1,0 +1,119 @@
+body{
+
+    <!--background-color: #19171d;-->;
+
+    background-color: #19171d;
+
+}
+
+.caja{
+
+    box-shadow: 1px 1px 5px black;
+    background: white;
+    width: 95%;
+    border-radius: 1px;
+    color: white;
+}
+
+#header{
+
+    height: 50px;
+    width: 100%;
+    background: #1A9EE2;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+
+}
+
+a:hover{
+
+    border-bottom: 0px;
+
+}
+
+a{ color: white;}
+
+.atras{
+
+    margin: 0;
+    display: inline;
+    position: absolute;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+/* Estilo app nota */
+
+.agregar{
+
+    width: 100%;
+    background: #337ab7;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+}
+
+.caja_asignatura{
+
+    font-size: 20px;
+    margin: 5px; 
+    display: inline;
+
+}
+
+.caja_nota{
+
+    font-size: 25px; 
+
+    text-align: center; 
+
+    margin: 10px 10px 20px 10px;
+
+}
+
+.caja_eliminar{
+
+    background: red;    
+    font-weight: bold;   
+    width: 50%;    
+    text-align: center;    
+    color: white;    
+    display: inline-block;        
+    margin: 0;   
+    float: right;
+    padding: 5px;
+
+}
+
+.caja_editar{
+
+    background: dodgerblue; 
+    font-weight: bold; 
+    width: 50%; 
+    text-align: center;
+    color: white; 
+    display: inline-block; 
+    margin: 0; 
+    padding: 5px;
+
+}
+
+#nombre{
+
+    font-size: 20px; 
+    display: inline; 
+    line-height: 50px; 
+    text-shadow: 1px 1px 1px black;
+
+}
+
+/* Estilos App Examenes */
+
+.popup{
+
+    background: white;
+    padding: 25px;
+
+}

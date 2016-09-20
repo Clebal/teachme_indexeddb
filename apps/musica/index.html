@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>SDT - Teach Me</title>
+
+        <!-- Etiqueta importante para Bootstrap -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap 3.3.2 -->
+        <script src="../../js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../framework/css/bootstrap.css">
+        <script src="../../framework/js/bootstrap.js"></script>
+
+        <!-- style.css -->
+
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+        <!-- Ni imito ni copio solamente estilo propio -->
+
+        <style>
+
+            body{
+
+                <!--background-color: #19171d;-->;
+
+                background: url(img/bg.jpg);
+
+            }
+
+
+            .playpause_control{
+
+                text-align:center;
+                color: white;
+                font-size: 30px;
+
+            }
+
+            .playpause_control:hover{
+
+                text-align:center;
+                color: white;
+                font-size: 30px;
+
+            }
+
+
+            .audio_control{
+
+                font-size: 25px;
+
+            }
+
+            .audio_control:hover{
+
+                color: white;
+
+            }
+
+        </style>
+
+        <!-- Audio -->
+
+        <script src="js/player.js"></script>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+
+        <a href="../../existe.html" style="color: white;">
+
+            <div class="atras">
+
+                <span class="glyphicon glyphicon-menu-left"></span>
+
+            </div>
+
+        </a>
+
+        <br><br>
+
+        <h2 style="color: white;" class="text-center">Relajate y escucha</h2>
+
+        <br><br><br><br>
+
+        <div class="center-block text-center">
+
+            <p id="play" class="playpause_control glyphicon glyphicon-play"></p>
+
+            <p id="pause" class="playpause_control glyphicon glyphicon-pause" style="display:none"></p>
+
+        </div>
+
+        <audio id="player" preload="auto">
+
+            <source src="audio/audio.mp3"></source>
+
+        <!-- Si tuviésemos la fuente en ogg, la pondríamos aquí -->
+
+        </audio>
+
+    <br><br><br>
+
+    </body>
+
+</html>
